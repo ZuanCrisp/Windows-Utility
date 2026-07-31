@@ -20,7 +20,7 @@ Welcome to the official documentation for WinUtil, your go-to utility for optimi
 * Now you can run the following command:
 
 ```
-irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
 ```
 
 

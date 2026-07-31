@@ -34,7 +34,7 @@ WinUtil is actively maintained with frequent updates. New features, bug fixes, a
 
 ### How do I run WinUtil?
 1. Open PowerShell as Administrator
-2. Run: `irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex`
+2. Run: `irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex`
 3. Wait for the GUI to appear
 
 ### Why do I need Administrator rights?
@@ -51,7 +51,7 @@ Try these solutions in order:
 2. **Force TLS 1.2**:
    ```powershell
    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-   irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
+   irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
    ```
 
    > [!NOTE]
@@ -65,7 +65,7 @@ Try these solutions in order:
 Run this command first to allow script execution:
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process -Force
-irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
 ```
 
 This only affects the current PowerShell session and is safe.
