@@ -102,7 +102,7 @@ jobs:
 
       - name: Generate Release Notes
         id: generate_notes
-        uses: release-drafter/release-drafter@v7
+        uses: release-drafter/release-drafter@v7.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
