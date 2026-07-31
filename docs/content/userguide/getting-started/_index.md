@@ -55,13 +55,13 @@ With PowerShell running as Administrator, run one of the following commands depe
 **Stable release (recommended)**
 
 ```powershell
-irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
 ```
 
 **Development branch (bleeding edge — for testing only)**
 
 ```powershell
-irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/windev.ps1" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/windev.ps1" | iex
 ```
 
 > [!NOTE]

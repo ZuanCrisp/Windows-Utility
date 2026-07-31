@@ -14,7 +14,7 @@ Open PowerShell or Terminal as admin, then run:
 
 **Stable Branch (recommended)**
 ```ps1
-irm https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1 | iex
+irm https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1 | iex
 ```
 
 ### How to open an admin terminal
@@ -29,7 +29,7 @@ irm https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1
 Apply a predefined configuration without manual selection:
 
 ```powershell
-& ([ScriptBlock]::Create((irm https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1))) -Preset Standard
+& ([ScriptBlock]::Create((irm https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1))) -Preset Standard
 ```
 
 | Preset | Description |
@@ -39,13 +39,13 @@ Apply a predefined configuration without manual selection:
 | `Advanced` | Deep tweaks for power users |
 
 To view exactly what each preset does, see:
-https://github.com/ZuanCrisp/Windows-Utility/blob/main/config/preset.json
+https://github.com/ZuanCrisp/Windows-Utility/blob/master/config/preset.json
 
 ---
 
 ## Build & Develop
 
-See https://github.com/ZuanCrisp/Windows-Utility/blob/main/.github/CONTRIBUTING.md
+See https://github.com/ZuanCrisp/Windows-Utility/blob/master/.github/CONTRIBUTING.md
 
 ---
 

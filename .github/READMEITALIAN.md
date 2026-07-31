@@ -25,7 +25,7 @@ Winutil deve essere eseguito con privilegi di amministratore, poiché apporta mo
 #### Branch stabile (Consigliato)
 
 ```ps1
-irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
 ```
 #### Branch Sviluppatore
 
@@ -44,11 +44,11 @@ Winutil supporta anche preset predefiniti che applicano automaticamente configur
 Esempio:
 
 ```powershell
-& ([ScriptBlock]::Create((irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1"))) -Preset Standard
+& ([ScriptBlock]::Create((irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1"))) -Preset Standard
 ```
 
 Per vedere esattamente cosa fa ogni preset, consulta:
-https://github.com/ZuanCrisp/Windows-Utility/blob/main/config/preset.json
+https://github.com/ZuanCrisp/Windows-Utility/blob/master/config/preset.json
 
 In caso di problemi, consulta i [Problemi noti](https://github.com/ZuanCrisp/Windows-Utility/knownissues/) o [Apri una segnalazione](https://github.com/ZuanCrisp/Windows-Utility/issues)
 
