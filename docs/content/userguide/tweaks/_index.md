@@ -24,7 +24,7 @@ Use the quick-selection buttons at the top of the Tweaks tab to speed up setup:
 * **Run Tweaks**: After selecting the desired tweaks, click **Run Tweaks** at the bottom of the screen.
 
 > [!NOTE]
-> To see what each preset includes, view [preset.json](https://github.com/ChrisTitusTech/winutil/blob/main/config/preset.json).
+> To see what each preset includes, view [preset.json](https://github.com/ZuanCrisp/Windows-Utility/blob/main/config/preset.json).
 
 > [!IMPORTANT]
 > Some tweaks take effect immediately, while others may require Explorer to restart, a sign-out, or a full reboot.

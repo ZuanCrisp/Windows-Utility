@@ -11,5 +11,5 @@ function Invoke-WinUtilInstallPSProfile {
         winget install Microsoft.PowerShell --source winget --installer-type wix --silent
     }
 
-    wt new-tab pwsh -NoExit -Command "irm https://github.com/ChrisTitusTech/powershell-profile/raw/main/setup.ps1 | iex"
+    wt new-tab pwsh -NoExit -Command "irm https://github.com/ZuanCrisp/powershell-profile/raw/main/setup.ps1 | iex"
 }

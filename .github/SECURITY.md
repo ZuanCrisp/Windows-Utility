@@ -1,6 +1,6 @@
 # Security Policy
 
-If you find a security issue, please post it in the Issues tab. If you think it should be private, you can email me at contact@christitus.com.
+If you find a security issue, please post it in the Issues tab. If you think it should be private, you can email me at contact@zuancrisp.com.
 
 For immediate response check out our Discord server:
 

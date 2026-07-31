@@ -12,7 +12,7 @@
 
 ### 1. Fork the Repository
 
-Go to the ChrisTitusTech/winutil repository on GitHub and click the Fork button in the top right corner.
+Go to the ZuanCrisp/Windows-Utility repository on GitHub and click the Fork button in the top right corner.
 
 <img width="171" height="50" alt="{650A4723-F38A-44A4-9820-D232BC87C8A0}" src="https://github.com/user-attachments/assets/a214f27c-2fee-444a-920f-d87b14f5896f" />
 
@@ -21,9 +21,8 @@ Go to the ChrisTitusTech/winutil repository on GitHub and click the Fork button 
 ### 2. Clone Your Fork
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/winutil.git
-cd winutil
-```
+git clone https://github.com/YOUR_USERNAME/Windows-Utility.git
+cd Windows-Utility```
 
 ---
 
@@ -60,7 +59,7 @@ Open Powershell as Administrator.
 Go to the project folder:
 
 ```powershell
-cd path\to\winutil
+cd path\to\Windows-Utility
 ```
 
 Run:

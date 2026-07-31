@@ -243,7 +243,7 @@ $publicFunctionsDir  = "$repoRoot/functions/public"
 $privateFunctionsDir = "$repoRoot/functions/private"
 
 $itemnametocut = 'WPF(WinUtil|Toggle|Features?|Tweaks?|Panel|Fix(es)?)?'
-$baseUrl       = "https://winutil.christitus.com"
+$baseUrl       = "https://github.com/ZuanCrisp/Windows-Utility"
 
 # Categories with generated docs
 $documentedCategories = @(

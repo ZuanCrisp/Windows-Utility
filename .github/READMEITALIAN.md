@@ -1,9 +1,7 @@
-# Chris Titus Tech's Windows Utility
+# Zu Techy's Windows Utility
 
-[![Version](https://img.shields.io/github/v/release/ChrisTitusTech/winutil?color=%230567ff&label=Latest%20Release&style=for-the-badge)](https://github.com/ChrisTitusTech/winutil/releases/latest)
-![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/ChrisTitusTech/winutil/winutil.ps1?label=Total%20Downloads&style=for-the-badge)
 [![](https://dcbadge.limes.pink/api/server/https://discord.gg/RUbZUZyByQ?theme=default-inverted&style=for-the-badge)](https://discord.gg/RUbZUZyByQ)
-[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://winutil.christitus.com/)
+[![Static Badge](https://img.shields.io/badge/Documentation-_?style=for-the-badge&logo=bookstack&color=grey)](https://github.com/ZuanCrisp/Windows-Utility)
 
 Questa utility è una raccolta di attività Windows che eseguo personalmente su ogni sistema che utilizzo. È progettata per snellire le *installazioni*, rimuovere i componenti superflui tramite *ottimizzazioni*, risolvere problemi tramite la *configurazione*, e riparare *aggiornamenti* di Windows. Sono estremamente selettivo riguardo ai contributi per mantenere questo progetto pulito ed efficiente.
 
@@ -27,12 +25,12 @@ Winutil deve essere eseguito con privilegi di amministratore, poiché apporta mo
 #### Branch stabile (Consigliato)
 
 ```ps1
-irm "https://christitus.com/win" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1" | iex
 ```
 #### Branch Sviluppatore
 
 ```ps1
-irm "https://christitus.com/windev" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/dev/winutil.ps1" | iex
 ```
 
 ### Automazione
@@ -46,21 +44,21 @@ Winutil supporta anche preset predefiniti che applicano automaticamente configur
 Esempio:
 
 ```powershell
-& ([ScriptBlock]::Create((irm "https://christitus.com/win"))) -Preset Standard
+& ([ScriptBlock]::Create((irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/main/winutil.ps1"))) -Preset Standard
 ```
 
 Per vedere esattamente cosa fa ogni preset, consulta:
-https://github.com/ChrisTitusTech/winutil/blob/main/config/preset.json
+https://github.com/ZuanCrisp/Windows-Utility/blob/main/config/preset.json
 
-In caso di problemi, consulta i [Problemi noti](https://winutil.christitus.com/knownissues/) o [Apri una segnalazione](https://github.com/ChrisTitusTech/winutil/issues)
+In caso di problemi, consulta i [Problemi noti](https://github.com/ZuanCrisp/Windows-Utility/knownissues/) o [Apri una segnalazione](https://github.com/ZuanCrisp/Windows-Utility/issues)
 
 ## 🎓 Documentazione
 
-### [Documentazione ufficiale di WinUtil](https://winutil.christitus.com/)
+### [Documentazione ufficiale di WinUtil](https://github.com/ZuanCrisp/Windows-Utility)
 
 ### [Tutorial su YouTube](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
 
-### [Articolo su ChrisTitus.com](https://christitus.com/windows-tool/)
+### [Articolo su Zu Techy](https://github.com/ZuanCrisp/Windows-Utility)
 
 ## 🛠️ Build & Sviluppo
 
@@ -71,8 +69,8 @@ Ottieni una copia del codice sorgente. Puoi farlo tramite l'interfaccia di GitHu
 
 Se git è installato, esegui i seguenti comandi in una finestra PowerShell per clonare e accedere alla directory del progetto:
 ```ps1
-git clone --depth 1 "https://github.com/ChrisTitusTech/winutil.git"
-cd winutil
+git clone --depth 1 "https://github.com/ZuanCrisp/Windows-Utility.git"
+cd Windows-Utility
 ```
 
 Per compilare il progetto, esegui lo script di compilazione in una finestra PowerShell (i permessi di amministratore NON sono richiesti):
@@ -83,7 +81,7 @@ Per compilare il progetto, esegui lo script di compilazione in una finestra Powe
 Troverai un nuovo file chiamato `winutil.ps1`, creato dallo script `Compile.ps1`. Ora puoi eseguirlo come amministratore e apparirà una nuova finestra. Goditi la tua versione compilata di WinUtil :)
 
 > [!TIP]
-> Per ulteriori informazioni sull'utilizzo di WinUtil e su come contribuire allo sviluppo, ti invitiamo a leggere le [Linee guida per i contributi](https://winutil.christitus.com/contributing/). Se non sai da dove iniziare o hai domande, puoi chiedere sul nostro [Server Discord della community](https://discord.gg/RUbZUZyByQ); i membri attivi del progetto risponderanno appena possibile.
+> Per ulteriori informazioni sull'utilizzo di WinUtil e su come contribuire allo sviluppo, ti invitiamo a leggere le [Linee guida per i contributi](https://github.com/ZuanCrisp/Windows-Utility/contributing/). Se non sai da dove iniziare o hai domande, puoi chiedere sul nostro [Server Discord della community](https://discord.gg/RUbZUZyByQ); i membri attivi del progetto risponderanno appena possibile.
 
 ## 💖 Supporto
 - Per sostenere il progetto moralmente e mentalmente, non dimenticare di lasciare una ⭐️!
@@ -97,8 +95,6 @@ Questi sono gli sponsor che aiutano a mantenere vivo il progetto con contributi 
 
 ## 🏅 Grazie a tutti i collaboratori
 Un ringraziamento speciale per aver dedicato il vostro tempo ad aiutare Winutil a crescere. Grazie mille! Continuate così 🍻.
-
-[![Contributori](https://contrib.rocks/image?repo=ChrisTitusTech/winutil)](https://github.com/ChrisTitusTech/winutil/graphs/contributors)
 
 ## 📊 Statistiche GitHub
 

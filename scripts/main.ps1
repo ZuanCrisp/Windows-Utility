@@ -16,7 +16,7 @@ CC:::::::::::::::C       T:::::::::T            T:::::::::T
 CCC::::::::::::C         T:::::::::T            T:::::::::T
   CCCCCCCCCCCCC          TTTTTTTTTTT            TTTTTTTTTTT
 
-====Chris Titus Tech=====
+====Zu Techy=====
 =====Windows Toolbox=====
 "@
 
@@ -424,34 +424,22 @@ $sync["AboutMenuItem"].Add_Click({
     Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
     $authorInfo = @"
-Author   : <a href="https://github.com/ChrisTitusTech">@ChrisTitusTech</a>
+Author   : <a href="https://github.com/ZuanCrisp">@ZuanCrisp</a>
 UI       : <a href="https://github.com/MyDrift-user">@MyDrift-user</a>, <a href="https://github.com/Marterich">@Marterich</a>
 Runspace : <a href="https://github.com/DeveloperDurp">@DeveloperDurp</a>, <a href="https://github.com/Marterich">@Marterich</a>
-GitHub   : <a href="https://github.com/ChrisTitusTech/winutil">ChrisTitusTech/winutil</a>
-Version  : <a href="https://github.com/ChrisTitusTech/winutil/releases/tag/$($sync.version)">$($sync.version)</a>
+GitHub   : <a href="https://github.com/ZuanCrisp/Windows-Utility">ZuanCrisp/Windows-Utility</a>
+Version  : <a href="https://github.com/ZuanCrisp/Windows-Utility/releases/tag/$($sync.version)">$($sync.version)</a>
 "@
     Show-CustomDialog -Title "About" -Message $authorInfo
 })
 $sync["DocumentationMenuItem"].Add_Click({
     Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
-    Start-Process "https://winutil.christitus.com/"
+    Start-Process "https://github.com/ZuanCrisp/Windows-Utility"
 })
 $sync["SponsorMenuItem"].Add_Click({
     Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
-    $authorInfo = @"
-<a href="https://github.com/sponsors/ChrisTitusTech">Current sponsors for ChrisTitusTech:</a>
-"@
-    $authorInfo += "`n"
-    try {
-        $sponsors = Invoke-WinUtilSponsors
-        foreach ($sponsor in $sponsors) {
-            $authorInfo += "<a href=`"https://github.com/sponsors/ChrisTitusTech`">$sponsor</a>`n"
-        }
-    } catch {
-        $authorInfo += "An error occurred while fetching or processing the sponsors: $_`n"
-    }
-    Show-CustomDialog -Title "Sponsors" -Message $authorInfo -EnableScroll $true
+    Show-CustomDialog -Title "Sponsors" -Message "Visit https://github.com/ZuanCrisp/Windows-Utility for more info" -EnableScroll $true
 })
 
 # Font Scaling Event Handlers

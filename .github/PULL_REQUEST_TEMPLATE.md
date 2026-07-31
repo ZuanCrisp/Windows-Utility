@@ -1,4 +1,4 @@
-<!--Before you make this PR have you followed the docs here? - https://winutil.christitus.com/contributing/ -->
+<!--Before you make this PR have you followed the docs here? - https://github.com/ZuanCrisp/Windows-Utility/contributing/ -->
 <!--Documentation is auto-generated from configs - no manual documentation updates needed -->
 
 ## Type of Change

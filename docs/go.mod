@@ -1,4 +1,4 @@
-module github.com/ChrisTitusTech/WinUtil
+module github.com/ZuanCrisp/Windows-Utility
 
 go 1.26
 

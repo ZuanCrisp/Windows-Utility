@@ -58,8 +58,8 @@ function Invoke-WinUtilISOScript {
             -Log             { param($m) Write-Host $m }
 
     .NOTES
-        Author  : Chris Titus @christitustech
-        GitHub  : https://github.com/ChrisTitusTech
+        Author  : Zu Techy @ZuanCrisp
+        GitHub  : https://github.com/ZuanCrisp
     #>
     param (
         [Parameter(Mandatory)][string]$ScratchDir,

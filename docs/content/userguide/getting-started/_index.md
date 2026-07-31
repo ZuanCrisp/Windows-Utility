@@ -55,13 +55,13 @@ With PowerShell running as Administrator, run one of the following commands depe
 **Stable release (recommended)**
 
 ```powershell
-irm "https://christitus.com/win" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
 ```
 
 **Development branch (bleeding edge — for testing only)**
 
 ```powershell
-irm "https://christitus.com/windev" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/windev.ps1" | iex
 ```
 
 > [!NOTE]
@@ -218,7 +218,7 @@ Winutil offers several preset configurations:
 If the launch command fails:
 
 - Make sure PowerShell or Terminal is running as Administrator.
-- Confirm the PC has internet access and can reach `christitus.com`.
+- Confirm the PC has internet access and can reach `raw.githubusercontent.com`.
 - Retry from a normal PowerShell session rather than a restricted enterprise shell profile.
 - If the command starts and then closes immediately, reopen Terminal as Administrator and run it again so you can read the error output.
 
@@ -239,7 +239,7 @@ If you need assistance:
 - **Documentation**: Browse this documentation site
 - **Known Issues**: Check the [Known Issues](/knownissues/) page
 - **Discord**: Join the [community Discord server](https://discord.gg/RUbZUZyByQ)
-- **GitHub Issues**: Report bugs on [GitHub](https://github.com/ChrisTitusTech/winutil/issues)
+- **GitHub Issues**: Report bugs on [GitHub](https://github.com/ZuanCrisp/Windows-Utility/issues)
 - **YouTube**: Watch [video tutorials](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
 
 ## Quick Reference Card

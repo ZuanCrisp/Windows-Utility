@@ -1,4 +1,4 @@
-baseURL = "https://winutil.christitus.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "WinUtil Documentation"
 enableGitInfo = true
@@ -58,14 +58,10 @@ parent = "help"
 [[menu.main]]
 identifier = "forums"
 name = "Forums"
-url = "https://forum.christitus.com/"
+url = "https://github.com/ZuanCrisp/Windows-Utility/discussions"
 weight = 3
 parent = "help"
 
-[[menu.main]]
-name = "Store"
-url = "https://christitus.com/downloads/"
-weight = 5
 
 [[menu.main]]
 name = "Search"
@@ -77,13 +73,13 @@ weight = 6
 [[menu.main]]
 name = "GitHub"
 weight = 7
-url = "https://github.com/christitustech/winutil"
+url = "https://github.com/ZuanCrisp/Windows-Utility"
 
   [menu.main.params]
   icon = "github"
 
 [params]
-description = "Chris Titus Tech's Windows Utility - Install Programs, Tweaks, Fixes, and Updates"
+description = "Zu Techy's Windows Utility - Install Programs, Tweaks, Fixes, and Updates"
 displayUpdatedDate = true
 dateFormat = "January 2, 2006"
 
@@ -125,7 +121,7 @@ display = "hover"
 
   [[menu.sidebar]]
   name = "GitHub Repo ↗"
-  url = "https://github.com/ChrisTitusTech/winutil"
+  url = "https://github.com/ZuanCrisp/Windows-Utility"
   weight = 2
 
   [[menu.sidebar]]

@@ -17,7 +17,7 @@ Yes, WinUtil is open source, and the code is publicly available on GitHub. Thous
 - Run it as Administrator (required)
 - Create a restore point before major changes
 - Understand what tweaks you're applying
-- Run only from [official source](https://github.com/ChrisTitusTech/winutil/)
+- Run only from [official source](https://github.com/ZuanCrisp/Windows-Utility/)
 
 ### Do I need to keep running WinUtil?
 No. Once you've applied tweaks or installed applications, you can close WinUtil. Changes persist after closing. You only need to run WinUtil again when you want to make additional changes or undo tweaks.
@@ -34,7 +34,7 @@ WinUtil is actively maintained with frequent updates. New features, bug fixes, a
 
 ### How do I run WinUtil?
 1. Open PowerShell as Administrator
-2. Run: `irm "https://christitus.com/win" | iex`
+2. Run: `irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex`
 3. Wait for the GUI to appear
 
 ### Why do I need Administrator rights?
@@ -45,13 +45,13 @@ Try these solutions in order:
 
 1. **Use the direct GitHub link**:
    ```powershell
-   irm https://github.com/ChrisTitusTech/winutil/releases/latest/download/Winutil.ps1 | iex
+   irm https://github.com/ZuanCrisp/Windows-Utility/releases/latest/download/Winutil.ps1 | iex
    ```
 
 2. **Force TLS 1.2**:
    ```powershell
    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-   irm "https://christitus.com/win" | iex
+   irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
    ```
 
    > [!NOTE]
@@ -65,7 +65,7 @@ Try these solutions in order:
 Run this command first to allow script execution:
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process -Force
-irm "https://christitus.com/win" | iex
+irm "https://raw.githubusercontent.com/ZuanCrisp/Windows-Utility/master/winutil.ps1" | iex
 ```
 
 This only affects the current PowerShell session and is safe.
@@ -262,5 +262,5 @@ Can't find your answer? Try these resources:
 - **[Known Issues](/knownissues/)** - Check if it's a known problem
 - **[User Guide](/userguide/)** - Comprehensive documentation
 - **[Discord Community](https://discord.gg/RUbZUZyByQ)** - Get help from other users
-- **[GitHub Issues](https://github.com/ChrisTitusTech/winutil/issues)** - Report bugs
+- **[GitHub Issues](https://github.com/ZuanCrisp/Windows-Utility/issues)** - Report bugs
 - **[YouTube Tutorial](https://www.youtube.com/watch?v=6UQZ5oQg8XA)** - Video walkthrough

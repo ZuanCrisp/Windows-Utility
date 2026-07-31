@@ -16,7 +16,7 @@ Welcome to the official User Guide for **Winutil**, your all-in-one Windows tool
 
 ## What is Winutil?
 
-Winutil (Chris Titus Tech's Windows Utility) is a comprehensive PowerShell-based tool that helps you:
+Winutil (Zu Techy's Windows Utility) is a comprehensive PowerShell-based tool that helps you:
 
 - **Install Applications**: Quickly install popular software without manual downloads
 - **Apply Tweaks**: Optimize Windows for performance, privacy, and usability
@@ -130,7 +130,7 @@ Need help?
 - **FAQ**: Check [Frequently Asked Questions](../faq/)
 - **Known Issues**: Review [Known Issues](../knownissues/)
 - **Discord**: Join the [community Discord](https://discord.gg/RUbZUZyByQ)
-- **GitHub**: Report bugs on [GitHub Issues](https://github.com/ChrisTitusTech/winutil/issues)
+- **GitHub**: Report bugs on [GitHub Issues](https://github.com/ZuanCrisp/Windows-Utility/issues)
 - **YouTube**: Watch [video tutorials](https://www.youtube.com/watch?v=6UQZ5oQg8XA)
 
 ## Contributing
