@@ -7,6 +7,10 @@ next: /userguide/tweaks/
 
 Use the Applications tab to install, upgrade, uninstall, and review supported apps from one place. WinUtil relies on package manager support for these actions, so the available results depend on what WinGet can detect and manage on your system.
 
+Use the category chips to filter the list, including the **Document** category. Hold `Ctrl` while clicking to select multiple categories. Search text filters within the selected categories; click **All** to clear the category filter. Clearing a filter restores categories that it automatically expanded to their previous collapsed state.
+
+A green corner badge identifies Free and Open Source Software (FOSS). Hover over an app to see its description and the preset JSON key. Search also matches these keys.
+
 {{< tabs >}}
 
   {{< tab name="Installation & Updates" selected=true >}}

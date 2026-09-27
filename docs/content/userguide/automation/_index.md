@@ -7,6 +7,10 @@ next: /userguide/win11creator/
 
 Use Automation to run WinUtil from an exported configuration file.
 
+Import accepts both current arrays of selection keys and legacy exports containing `Install` and `WPFInstall` properties. Legacy imports restore supported selections and report retired keys in the log and, when a window is open, a warning dialog. An invalid current config or a legacy config with no supported keys leaves the existing selections intact.
+
+Hover over an app, tweak, or feature checkbox to find its preset JSON key. Imported selections also appear when you open a tab that has not yet been initialized.
+
 WinUtil supports predefined presets that apply common configurations automatically:
 
 - `Standard`

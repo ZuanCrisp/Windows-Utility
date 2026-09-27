@@ -6,6 +6,8 @@ Drop-in operating instructions for coding agents. Read this file before every ta
 
 This repository follows the AGENTS.md convention: these instructions are for Codex, Claude Code, Cursor, Windsurf, Copilot, Aider, Devin, Amp, and other coding agents that read `AGENTS.md`.
 
+When the user says **`source code update`**, treat it as an instruction to update this repository from the supplied source folder. Read [SOURCE_CODE_UPDATE.md](SOURCE_CODE_UPDATE.md) and its linked workflow before editing. Find the source as described there, preserve local customizations, merge the relevant updates, and complete verification without asking for routine confirmation.
+
 ## 0. Non-Negotiables
 
 These rules override everything else in this file when in conflict:

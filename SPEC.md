@@ -81,12 +81,18 @@ Config files must remain valid JSON and compile cleanly through `ConvertFrom-Jso
 
 Preset and navigation files should reference valid config keys. Avoid renaming config keys unless all presets, UI references, docs, and code paths are updated together.
 
+Combo-box options may be space-separated, pipe-separated for labels containing spaces, or an array. Registry-backed combo boxes define per-state `Values` and `DefaultValue` for each registry entry. Their shared handler verifies writes and attempts to restore exact previous values on failure.
+
+Configuration import supports current arrays of selection keys and legacy objects containing `Install` and `WPFInstall`. Current imports validate all keys before replacing selections; legacy imports skip and report retired keys and preserve selections when none are supported.
+
 ## Safety Requirements
 
 - Registry, service, package manager, Windows Update, AppX removal, and ISO operations can affect the host system. Changes must be explicit, reversible where practical, and consistent with existing logging and confirmation patterns.
 - Tweak changes should include undo metadata when the schema supports it.
 - Package installation should prefer existing WinGet and Chocolatey helper functions.
 - ISO workflows must not modify the user's original ISO file; they should work on copied/mounted content following existing patterns.
+
+Win11 Creator stages answer-file and first-logon customizations in copied media, preserving the install image and its editions unless driver injection is selected. Driver injection services one `install.wim` index with one mount, one add-driver operation, and one commit, and checks metadata before and after. Storage drivers are staged for Windows Setup without servicing `boot.wim`; `install.esd` does not support this injection path.
 
 ## Testing And CI
 

@@ -58,7 +58,7 @@ Advanced Tweaks are for users who understand the side effects of deeper Windows 
 
 Use the DNS section to switch both IPv4 and IPv6 DNS providers without editing adapter settings manually. Choose the option that best matches your priority: speed, filtering, or privacy.
 
-* **Default**: Uses the default DNS settings configured by your ISP or network.
+* **Default**: Leaves the current DNS settings unchanged.
 * **DHCP**: Automatically acquires DNS settings from the DHCP server.
 * [**Google**](https://developers.google.com/speed/public-dns?hl=en): A reliable and fast DNS service provided by Google.
 * [**Cloudflare**](https://developers.cloudflare.com/1.1.1.1/): Known for speed and privacy, Cloudflare DNS is a popular choice for enhancing internet performance.
@@ -69,9 +69,15 @@ Use the DNS section to switch both IPv4 and IPv6 DNS providers without editing a
 * [**AdGuard_Ads_Trackers**](https://adguard-dns.io/en/welcome.html): AdGuard DNS blocks ads, trackers, and other unwanted DNS requests. Visit the website and sign in for a dashboard, statistics, and additional server-side customization.
 * [**AdGuard_Ads_Trackers_Malware_Adult**](https://adguard-dns.io/en/welcome.html): AdGuard DNS blocks ads, trackers, malware, and adult content, and enables Safe Search and Safe Mode where possible.
 
+Mullvad options are also available, with combinations of ads, trackers, malware, social media, adult content, and gambling filtering. These options require Windows DNS over HTTPS (DoH) support; WinUtil stops the DNS change if secure setup fails. Other providers with a DoH template attempt encrypted DNS on supported systems and can fall back to plain DNS when setup fails. **DHCP** resets both IPv4 and IPv6 DNS and removes the adapter's DoH settings.
+
+If DNS setup fails, the tweaks workflow reports the failure and stops before applying the selected tweaks.
+
 ### Customize Preferences
 
 Use Customize Preferences for smaller visual and behavior changes that do not fit the main tweak presets.
+
+**Multiplane Overlay** offers **Enabled**, **Disabled (Compatibility)**, and **Fully Disabled**. The compatibility option sets `OverlayTestMode=5`; full disable also sets `DisableOverlays=1`. Enabled removes these overrides. Changes apply when you select a state, and a failed write attempts to restore the previous registry values. A custom registry combination is shown as unknown until you choose a supported state.
 
 ### Performance Plans
 

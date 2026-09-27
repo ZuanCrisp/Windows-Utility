@@ -55,4 +55,6 @@ Open old-school Windows panels directly from WinUtil. Available panels include:
 
 Enable an OpenSSH server on your Windows machine for remote access.
 
+For administrator accounts, place public keys in `%ProgramData%\ssh\administrators_authorized_keys`. WinUtil restricts this file to Administrators and SYSTEM using their security identifiers, so this works on localized Windows installations. If an older WinUtil setup redirected administrator keys to the profile's `.ssh\authorized_keys`, enabling the server restores the standard setting and copies existing keys without duplicating them.
+
 Only enable this if you intend to use remote shell access. After turning it on, verify your firewall rules and account permissions before exposing the machine to other devices.

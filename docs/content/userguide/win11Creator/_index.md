@@ -39,20 +39,21 @@ WinUtil includes a built-in **Win11 Creator** tool that lets you take an officia
 
 ### Step 3 — Run the Modification
 
-Click **Run Windows ISO Modification and Creator** to start the customization process. WinUtil will:
+Click **Run Windows ISO Modification and Creator** to start the customization process.
+
+WinUtil works in a fresh temporary directory and preserves the original ISO. It prepares `autounattend.xml` and setup scripts in the copied media; app removal and most registry and scheduled-task changes run during installation or first logon. Without optional driver injection, the copied `install.wim` or `install.esd` is preserved without offline servicing.
 
 **App & Component Removal:**
-- **Remove 40+ bloat apps** — Clipchamp, Teams, Copilot, Dev Home, new Outlook, Bing apps, Solitaire, and more
-- **Delete OneDrive setup** from the image
+- **Remove configured bloat apps during setup and first logon** — Clipchamp, Teams, Copilot, Dev Home, new Outlook, Bing apps, Solitaire, and more
+- **Run the OneDrive uninstaller** during first logon
 
 **System Customization:**
 - **Bypass hardware checks** — removes TPM, Secure Boot, CPU, RAM, and storage requirement enforcement so the ISO installs on unsupported hardware
 - **Enable local account setup** — injects an `autounattend.xml` that skips the Microsoft account screen during OOBE
 - **Disable BitLocker and device encryption** — removes startup overhead
 - **Disable Chat icon** — removes chat taskbar button
-- **Strip unused editions** — keeps only your selected edition, saving 1–2 GB per removed edition
+- **Preserve available editions** — keeps the original install image and selects the requested edition by its existing index
 - **Pin the selected edition during setup** — writes setup metadata so OEM firmware keys for a different edition do not force the installer down the wrong product-key path
-- **Clean the component store** — runs DISM cleanup to reclaim another 300–800 MB
 
 **Privacy & Telemetry Tweaks:**
 - **Disable telemetry** — advertising ID, tailored experiences, input personalization, speech online privacy
@@ -66,9 +67,10 @@ Click **Run Windows ISO Modification and Creator** to start the customization pr
 - **Disable Copilot and search box suggestions**
 
 **Optional: Driver Injection**
-- If enabled, it injects all drivers from your current system into the install.wim and boot.wim — useful for offline installations on machines with missing drivers. This is an optional checkbox in Step 3.
+- If enabled, WinUtil exports current-system drivers and injects them into the selected `install.wim` index with one mount, one add-driver operation, and one commit. Storage drivers are staged separately for Windows Setup; `boot.wim` is preserved.
+- Driver injection requires `install.wim`. It rejects `install.esd` and invalid WIM metadata, and verifies that metadata remains intact after servicing.
 
-A live log shows progress as each step completes. This stage usually takes **10–30 minutes** depending on disk speed. The WIM dismount near the end is the slowest part, so do not close WinUtil while it is running.
+A live log shows progress as each step completes. Duration depends on media size, disk speed, and driver injection. Do not close WinUtil while it is running.
 
 ---
 
@@ -99,6 +101,8 @@ Once the modification is complete, choose how to save your image:
   > Double-check you have selected the correct drive before confirming. This operation cannot be undone.
 
   **Minimum USB size:** 8 GB recommended. Writing takes 10–20 minutes.
+
+  Large `install.wim` files are split for FAT32. An `install.esd` of 4 GB or larger cannot be written by this workflow; export an ISO instead or use media with `install.wim`.
   {{< /tab >}}
 
 {{< /tabs >}}
@@ -131,7 +135,7 @@ When you install Windows 11 from your modified ISO:
 | "install.wim not found" | Not a valid Windows 11 ISO — download a fresh one from Microsoft |
 | "oscdimg.exe not found" | Run `winget install -e --id Microsoft.OSCDIMG` then retry |
 | USB drive not showing up | Plug it in, wait a few seconds, then click **Refresh** |
-| Modification seems stuck | The WIM dismount step is slow — wait at least 10 minutes before assuming it's frozen |
+| Modification seems stuck | Check the live log; copying media and committing optional driver injection can take time |
 | "Access Denied" error | Make sure WinUtil is running as Administrator |
 | "Setup has failed to validate the product key" | Recreate the ISO with the latest WinUtil. The creator now removes stale `PID.txt`, writes `sources\ei.cfg`, and pins the selected image in `autounattend.xml` so setup does not use an embedded OEM key for a different edition |
 
