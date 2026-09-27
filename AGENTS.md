@@ -193,3 +193,4 @@ When the user corrects an agent approach, add or tighten one concrete rule here 
 - For Win11 Creator, start each new ISO modification in a fresh `WinUtil_Win11ISO_*` temp directory; existing-work detection is only for resuming/exporting already modified media.
 - For Script Analyzer cleanup, fix actionable source warnings first and do not globally suppress accepted convention warnings such as plural names, `ShouldProcess` on UI helpers, `$global:sync`, or compile-time cross-file false positives.
 - For DNS DHCP reset, keep the cmdlet reset and explicitly set IPv4 and IPv6 DNS source to DHCP.
+- When the user asks for a copy-paste commit command, use direct `git commit -m "..."` syntax with a quoted multiline message if needed; avoid temporary files and wrapper scripts unless requested.
